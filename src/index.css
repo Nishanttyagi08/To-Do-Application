@@ -217,6 +217,7 @@ footer p {
 @media (min-width: 321px) and (max-width: 480px) {
 
   .container {
+    height: 100vh;
    margin-top: 10px;
   }
   .container .title {
@@ -235,11 +236,12 @@ footer p {
   font-size: 6vw;
 }
  .input_holder .todo-description {
-  font-size: 5vw;
+  font-size: 5.5vw;
  }
 .input_holder button {
   margin-left: 30%;
   width: 40%;
+  font-size: 4.5vw;
 }
 .list {
   display: flex;
@@ -248,17 +250,63 @@ footer p {
 .todo {
   display: flex;
   flex-direction: column;
+  
 }
 
-.todo .heading {
-  font-size: 6vw;
+.toDo .heading {
+  font-size: 3.8vw  !important;
 }
 .toDo .descrip {
-  font-size: 4vw;
+  margin-top: 10px;
+  font-size: 3vw;
 }
-.todo .icons {
-  height: 12vh;
-  width: 16vw;
+.toDo button {
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+input {
+  width: 330px;
+}
+.icons {
+   height: 3rem;
+   width: 4rem;
+  gap: 15px;
+}
+footer {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.popup {
+  width: 90vw ;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.cross {
+  height: 2rem;
+  width: 2.5rem;
+}
+.popup h1 {
+  font-size: 5vw;
+}
+
+.popup__input_holder {
+  /* width: 60vw; */
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  
+}
+.popup__input_holder input {
+  width: 60vw;
+  margin-left: 12px;
+  font-size: 5vw;
+}
+.popup__input_holder button {
+  margin-left: 30px;
+  font-size: 4vw;
+  font-weight: 900;
 }
 
 }
