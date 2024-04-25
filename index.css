@@ -1,0 +1,338 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(28,23,104);
+ background: linear-gradient(90deg, rgba(28,23,104,1) 0%, rgba(61,61,180,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: fit-content;
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.3vw;
+  margin-top: 10px;
+}
+
+.input_holder {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+  height: 7.4vh;
+  
+}
+
+input {
+  padding: 30px 40px;
+  background-color: #101010;
+  color: #fff;
+  outline: none;
+  font-weight: 400;
+  border: none;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+.input_holder .todo-heading {
+  font-weight: 900;
+  font-size: 1.4vw;
+}
+button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5%;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1.3vw;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input {
+  width: 250px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.toDo {
+  background-color: #1c1c1c;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+
+.toDo .heading {
+  font-weight: 900;
+  font-size: 1.8vw;
+}
+.toDo .descrip {
+  max-width: 30vw;
+}
+
+.icons {
+  display: flex;
+  width: 6vw;
+  height: 4vh;
+  gap: 15px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0000006c;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  position: relative;
+  background-color: #1c1c1c;
+  width: 1000px;
+  padding: 10px;
+}
+
+.cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cross:hover {
+  color: #c4c4c4;
+}
+
+.popup h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+.popup__input_holder {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  padding: 0 60px;
+}
+.popup__input_holder input {
+  width: 800px;
+}
+.popup__input_holder button {
+  width: 200px;
+  padding: 10px 20px;
+  margin-left: 330px;
+  border: none;
+  border-radius: 5%;
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+
+.popup__input_holder input,
+.popup__input_holder button {
+  background-color: #fff;
+  color: #000;
+}
+
+.popup__input_holder input::placeholder {
+  color: #1c1c1c;
+}
+
+.popup__input_holder button:hover {
+  background-color: #c4c4c4;
+}
+
+
+footer {
+	position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+	bottom: 0;
+  border-top: 2.5px solid #fffefe;
+  font-size: 2.5vw;
+	width: 100%;
+  color: #000000;
+  font-weight: 600;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Implementation of Responsive Web design*/
+
+
+/* (Ex- small mobile devices) */
+@media (max-width: 320px) {
+  .input_holder {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* (Ex- larger mobile devices) */
+@media (min-width: 321px) and (max-width: 480px) {
+
+  .container {
+    height: 100vh;
+   margin-top: 10px;
+  }
+  .container .title {
+    text-align: center;
+    font-size: 9vw;
+    margin-bottom: 35px;
+  }
+.input_holder {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.input_holder .todo-heading {
+  font-size: 6vw;
+}
+ .input_holder .todo-description {
+  font-size: 5.5vw;
+ }
+.input_holder button {
+  margin-left: 30%;
+  width: 40%;
+  font-size: 4.5vw;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.toDo .heading {
+  font-size: 3.8vw  !important;
+}
+.toDo .descrip {
+  margin-top: 10px;
+  font-size: 3vw;
+}
+.toDo button {
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+input {
+  width: 330px;
+}
+.icons {
+   height: 3rem;
+   width: 4rem;
+  gap: 15px;
+}
+footer {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.popup {
+  width: 90vw ;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.cross {
+  height: 2rem;
+  width: 2.5rem;
+}
+.popup h1 {
+  font-size: 5vw;
+}
+
+.popup__input_holder {
+  /* width: 60vw; */
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  
+}
+.popup__input_holder input {
+  width: 60vw;
+  margin-left: 12px;
+  font-size: 5vw;
+}
+.popup__input_holder button {
+  margin-left: 30px;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+}
+/* (Ex- tablets, small laptops) */
+@media (min-width: 481px) and (max-width: 768px) {
+   .input_holder {
+    display: flex;
+    flex-direction: column;
+  }
+  .todo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* (Ex- larger laptops, desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* (Ex- large desktops, high-resolution displays) */
+@media (min-width: 1025px) {
+
+}
+/* (Ex- very large desktops, high-resolution displays) */
+@media (min-width: 1440px) {
+
+}
+
+
