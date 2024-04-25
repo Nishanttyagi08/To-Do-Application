@@ -217,28 +217,48 @@ footer p {
 @media (min-width: 321px) and (max-width: 480px) {
 
   .container {
-   margin-top: 100px;
+   margin-top: 10px;
   }
-  
-  .title {
+  .container .title {
     text-align: center;
-    font-size: 3.3vw;
-    margin-top: 10px;
+    font-size: 9vw;
+    margin-bottom: 35px;
   }
 .input_holder {
   display: flex;
   flex-direction: column;
+  height: 20vh;
+  padding: 10px 0;
+  margin-bottom: 40px;
 }
-
+.input_holder .todo-heading {
+  font-size: 6vw;
+}
+ .input_holder .todo-description {
+  font-size: 5vw;
+ }
+.input_holder button {
+  margin-left: 30%;
+  width: 40%;
+}
 .list {
+  display: flex;
   flex-direction: column;
 }
 .todo {
   display: flex;
   flex-direction: column;
 }
-.todo-heading {
+
+.todo .heading {
   font-size: 6vw;
+}
+.toDo .descrip {
+  font-size: 4vw;
+}
+.todo .icons {
+  height: 12vh;
+  width: 16vw;
 }
 
 }
