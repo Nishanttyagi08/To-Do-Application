@@ -201,6 +201,9 @@ footer {
 
 footer p {
 	margin: 0;
+  background: rgb(28,23,104);
+ background: linear-gradient(90deg, rgba(28,23,104,1) 0%, rgba(61,61,180,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
 }
 
 /* Implementation of Responsive Web design*/
@@ -211,6 +214,7 @@ footer p {
   .container {
     height: 100vh;
    margin-top: 10px;
+   width: 100vw;
   }
   .container .title {
     text-align: center;
@@ -229,11 +233,11 @@ footer p {
 }
 .input_holder .todo-heading {
   font-size: 8vw;
-  width: 50vw;
+  width: 70vw;
 }
- .input_holder .todo-description {
+ .tododescription {
   font-size: 7vw;
-  width: 50vw;
+  width: 60vw;
  }
 .input_holder button {
   /* margin-left: 30%; */
@@ -315,6 +319,7 @@ footer {
   .container {
     height: 100vh;
    margin-top: 10px;
+   width: 100vw;
   }
   .container .title {
     text-align: center;
@@ -324,28 +329,36 @@ footer {
 .input_holder {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 20vh;
   padding: 10px 0;
   margin-bottom: 40px;
+  width: 100vw;
 }
 .input_holder .todo-heading {
-  font-size: 6vw;
+  font-size: 6.5vw;
+  width: 70vw;
 }
- .input_holder .todo-description {
-  font-size: 5.5vw;
- }
+.tododescription {
+  font-size: 5.8vw;
+  width: 60vw;
+}
 .input_holder button {
-  margin-left: 30%;
+
   width: 40%;
   font-size: 4.5vw;
 }
 .list {
   display: flex;
   flex-direction: column;
+  margin-left: 2.5vw;
+  width: 95vw;
 }
 .todo {
   display: flex;
   flex-direction: column;
+ 
   
 }
 
@@ -412,6 +425,7 @@ footer {
   .container {
    height: 100vh;
   margin-top: 10px;
+  width: 100vw;
  }
  .container .title {
    text-align: center;
@@ -431,10 +445,9 @@ footer {
  font-size: 6vw;
 width: 80vw;
 }
-.input_holder .todo-description {
- font-size: 5.5vw;
- width: 80vw;
-
+.tododescription {
+  font-size: 5.8vw;
+  width: 70vw;
 }
 .input_holder button {
  /* margin-left: 25%; */
@@ -444,6 +457,8 @@ width: 80vw;
 .list {
  display: flex;
  flex-direction: column;
+ width: 95vw;
+ margin-left: 2.5vw;
 }
 .todo {
  display: flex;
