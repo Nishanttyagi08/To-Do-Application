@@ -46,7 +46,7 @@ const App = () => {
             placeholder="Add a ToDo..."
           />
 
-          <input
+          <input className="tododescription"
             name="description"
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
