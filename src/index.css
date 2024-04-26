@@ -208,11 +208,107 @@ footer p {
 
 /* (Ex- small mobile devices) */
 @media (max-width: 320px) {
-  .input_holder {
-    display: flex;
-    flex-direction: column;
+  .container {
+    height: 100vh;
+   margin-top: 10px;
   }
+  .container .title {
+    text-align: center;
+    font-size: 9vw;
+    margin-bottom: 35px;
+  }
+.input_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+  height: 20vh;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  width: 100vw;
 }
+.input_holder .todo-heading {
+  font-size: 8vw;
+  width: 50vw;
+}
+ .input_holder .todo-description {
+  font-size: 7vw;
+  width: 50vw;
+ }
+.input_holder button {
+  /* margin-left: 30%; */
+  width: 40%;
+  font-size: 6vw;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.toDo .heading {
+  font-size: 5vw  !important;
+}
+.toDo .descrip {
+  margin-top: 10px;
+  font-size: 4vw;
+}
+.toDo button {
+  font-size: 3vw;
+  font-weight: 900;
+  width: 40vw;
+}
+input {
+  width: 330px;
+}
+.icons {
+   height: 2rem;
+   width: 3rem;
+  gap: 15px;
+}
+footer {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.popup {
+  width: 90vw ;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.cross {
+  height: 2rem;
+  width: 2.5rem;
+}
+.popup h1 {
+  font-size: 5vw;
+}
+
+.popup__input_holder {
+  /* width: 60vw; */
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  
+}
+.popup__input_holder input {
+  width: 60vw;
+  margin-left: 12px;
+  font-size: 5vw;
+}
+.popup__input_holder button {
+  margin-left: 30px;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+}
+
 /* (Ex- larger mobile devices) */
 @media (min-width: 321px) and (max-width: 480px) {
 
@@ -310,29 +406,322 @@ footer {
 }
 
 }
+
 /* (Ex- tablets, small laptops) */
 @media (min-width: 481px) and (max-width: 768px) {
-   .input_holder {
-    display: flex;
-    flex-direction: column;
-  }
-  .todo {
-    display: flex;
-    flex-direction: column;
-  }
+  .container {
+   height: 100vh;
+  margin-top: 10px;
+ }
+ .container .title {
+   text-align: center;
+   font-size: 9vw;
+   margin-bottom: 75px;
+ }
+.input_holder {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 20vh;
+ width: 100vw;
+ margin-bottom: 90px;
 }
-/* (Ex- larger laptops, desktops) */
-@media (min-width: 769px) and (max-width: 1024px) {
+.input_holder .todo-heading {
+ font-size: 6vw;
+width: 80vw;
+}
+.input_holder .todo-description {
+ font-size: 5.5vw;
+ width: 80vw;
 
 }
+.input_holder button {
+ /* margin-left: 25%; */
+ width: 40vw;
+ font-size: 4.5vw;
+}
+.list {
+ display: flex;
+ flex-direction: column;
+}
+.todo {
+ display: flex;
+ flex-direction: column;
+
+ 
+}
+
+.toDo .heading {
+ font-size: 4.3vw  !important;
+}
+.toDo .descrip {
+ margin-top: 10px;
+ font-size: 3.5vw; 
+
+}
+.toDo button {
+ font-size: 2.9vw;
+ font-weight: 900;
+}
+input {
+ width: 490px;
+}
+.icons {
+  height: 3rem;
+  width: 4rem;
+ gap: 15px;
+}
+footer {
+ font-size: 6vw;
+ font-weight: 700;
+}
+
+.popup {
+ width: 90vw ;
+ overflow: hidden;
+ height: 40vh;
+}
+
+.cross {
+ height: 2rem;
+ width: 2.5rem;
+}
+.popup h1 {
+ font-size: 5vw;
+}
+
+.popup__input_holder {
+ /* width: 60vw; */
+ display: flex;
+ justify-self: center;
+ align-items: center;
+ 
+}
+.popup__input_holder input {
+ width: 60vw;
+ margin-left: 12px;
+ font-size: 5vw;
+}
+.popup__input_holder button {
+ margin-left: 30px;
+ font-size: 4vw;
+ font-weight: 900;
+}
+}
+/* (Ex- tablets, small laptops) */
+@media (min-width: 481px) and (max-width: 768px) {
+   .container {
+    height: 100vh;
+   margin-top: 10px;
+  }
+  .container .title {
+    text-align: center;
+    font-size: 9vw;
+    margin-bottom: 75px;
+  }
+.input_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+ 
+  width: 100vw;
+  margin-bottom: 90px;
+}
+.input_holder .todo-heading {
+  font-size: 6vw;
+ width: 80vw;
+}
+ .input_holder .todo-description {
+  font-size: 5.5vw;
+  width: 80vw;
+
+ }
+.input_holder button {
+  /* margin-left: 25%; */
+  width: 40vw;
+  font-size: 4.5vw;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.toDo .heading {
+  font-size: 4.3vw  !important;
+}
+.toDo .descrip {
+  margin-top: 10px;
+  font-size: 3.5vw; 
+
+}
+.toDo button {
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+input {
+  width: 490px;
+}
+.icons {
+   height: 3rem;
+   width: 4rem;
+  gap: 15px;
+}
+footer {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.popup {
+  width: 90vw ;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.cross {
+  height: 2rem;
+  width: 2.5rem;
+}
+.popup h1 {
+  font-size: 5vw;
+}
+
+.popup__input_holder {
+  /* width: 60vw; */
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  
+}
+.popup__input_holder input {
+  width: 60vw;
+  margin-left: 12px;
+  font-size: 5vw;
+}
+.popup__input_holder button {
+  margin-left: 30px;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+}
+
 
 /* (Ex- large desktops, high-resolution displays) */
 @media (min-width: 1025px) {
 
 }
 /* (Ex- very large desktops, high-resolution displays) */
-@media (min-width: 1440px) {
 
+
+@media (min-width: 1740px) {
+  .container {
+    height: 100vh;
+   margin-top: 10px;
+   width: 100vw;
+  }
+  .container .title {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 180px;
+  }
+.input_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; 
+  width: 90vw;
+  margin-bottom: 190px;
+}
+.input_holder .todo-heading {
+  font-size: 4vw;
+ width: 80vw;
+}
+ .input_holder .todo-description {
+  font-size: 3vw;
+  width: 80vw;
+
+ }
+.input_holder button {
+  width: 40vw;
+  font-size: 4.5vw;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+
+.toDo .heading {
+  font-size: 3.5vw  !important;
+}
+.toDo .descrip {
+  margin-top: 10px;
+  font-size: 3vw; 
+
+}
+.toDo button {
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+input {
+  width: 900px;
+}
+.icons {
+   height: 5rem;
+   width: 5rem;
+  gap: 25px;
+}
+footer {
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.popup {
+  width: 90vw ;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.cross {
+  height: 2rem;
+  width: 2.5rem;
+}
+.popup h1 {
+  font-size: 5vw;
+}
+
+.popup__input_holder {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  
+}
+.popup__input_holder input {
+  width: 60vw;
+  margin-left: 12px;
+  font-size: 5vw;
+}
+.popup__input_holder button {
+  margin-left: 30px;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+
+  
 }
 
 
