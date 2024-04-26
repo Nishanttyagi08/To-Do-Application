@@ -240,7 +240,6 @@ footer p {
   width: 60vw;
  }
 .input_holder button {
-  /* margin-left: 30%; */
   width: 40%;
   font-size: 6vw;
 }
@@ -272,7 +271,7 @@ input {
 .icons {
    height: 2rem;
    width: 3rem;
-  gap: 15px;
+  gap: 10px;
 }
 footer {
   font-size: 6vw;
@@ -282,7 +281,7 @@ footer {
 .popup {
   width: 90vw ;
   overflow: hidden;
-  height: 40vh;
+  height: 38vh;
 }
 
 .cross {
@@ -294,7 +293,7 @@ footer {
 }
 
 .popup__input_holder {
-  /* width: 60vw; */
+
   display: flex;
   justify-self: center;
   align-items: center;
@@ -302,14 +301,15 @@ footer {
 }
 .popup__input_holder input {
   width: 60vw;
-  margin-left: 12px;
+  /* margin-left: 12px; */
   font-size: 5vw;
 }
 .popup__input_holder button {
-  margin-left: 30px;
+  margin-left: 5px;
   font-size: 4vw;
   font-weight: 900;
 }
+
 
 }
 
@@ -389,7 +389,7 @@ footer {
 .popup {
   width: 90vw ;
   overflow: hidden;
-  height: 40vh;
+  height: 52vh;
 }
 
 .cross {
@@ -493,7 +493,7 @@ footer {
 .popup {
  width: 90vw ;
  overflow: hidden;
- height: 40vh;
+ height: 90vh;
 }
 
 .cross {
