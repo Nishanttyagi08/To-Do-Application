@@ -58,11 +58,6 @@ Contributing
 
 
 
-
-
-
-
-
-
-
-As web backend data upload in the render no need to install anything just visit the link and use anywhere
+As Todo web app backend data upload on the render no need to install anything just visit the link and use anywhere 
+'Thankyou for visting 
+Nishant Tyagi
